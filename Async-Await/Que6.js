@@ -3,7 +3,7 @@ const delay = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 
 //Function to print multiple greeting messages after different delays async funcion delays
 async function delayedMultiGreeting(messageDelayPairs) {
-  for (const [messages, delayMs] of messageDelayPairs) {
+  for (const [message, delayMs] of messageDelayPairs) {
     await delay(delayMs);
     console.log(message);
   }
